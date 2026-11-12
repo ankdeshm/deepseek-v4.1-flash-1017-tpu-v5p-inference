@@ -1,0 +1,140 @@
+apiVersion: leaderworkerset.x-k8s.io/v1
+kind: LeaderWorkerSet
+metadata:
+  name: v5p16-warm-bench
+  namespace: default
+spec:
+  replicas: 1
+  leaderWorkerTemplate:
+    size: 4
+    restartPolicy: RecreateGroupOnPodRestart
+    leaderTemplate:
+      metadata:
+        labels:
+          app: v5p16-warm-bench
+          role: leader
+        annotations:
+          gke-gcsfuse/volumes: "true"
+          cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      spec:
+        serviceAccountName: default
+        hostNetwork: true
+        dnsPolicy: ClusterFirstWithHostNet
+        nodeSelector:
+          cloud.google.com/gke-nodepool: YOUR_TPU_V5P_16_NODEPOOL
+          cloud.google.com/gke-tpu-accelerator: tpu-v5p-slice
+          cloud.google.com/gke-tpu-topology: 2x2x4
+        tolerations:
+          - key: "google.com/tpu"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-spot"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-queued"
+            operator: "Exists"
+            effect: "NoSchedule"
+        containers:
+          - name: bench
+            image: docker.io/vllm/vllm-tpu@sha256:f9565be370a7af2b631198aa95f891221a974b2b1727d22db9b275923d3261c6
+            imagePullPolicy: IfNotPresent
+            securityContext:
+              privileged: true
+            command: ["bash", "-lc"]
+            args:
+              - |
+                set -euo pipefail
+                python3 -u /models/dsv41-v5p/scripts/in_pod_setup_v5p.py \
+                  --scripts-dir /models/dsv41-v5p/scripts \
+                  --summary-out /tmp/setup_done.json
+                echo "[WARM-HOLD] Setup complete on $(hostname); holding /dev/shm warm..."
+                sleep infinity
+            resources:
+              requests:
+                google.com/tpu: "4"
+              limits:
+                google.com/tpu: "4"
+            volumeMounts:
+              - name: dshm
+                mountPath: /dev/shm
+              - name: tpu-plugin
+                mountPath: /var/run/tpu-plugin
+              - name: models-gcs
+                mountPath: /models
+        volumes:
+          - name: dshm
+            emptyDir:
+              medium: Memory
+              sizeLimit: 240Gi
+          - name: tpu-plugin
+            hostPath:
+              path: /var/run/tpu-plugin
+              type: DirectoryOrCreate
+          - name: models-gcs
+            persistentVolumeClaim:
+              claimName: YOUR_MODELS_PVC
+    workerTemplate:
+      metadata:
+        labels:
+          app: v5p16-warm-bench
+          role: worker
+        annotations:
+          gke-gcsfuse/volumes: "true"
+          cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      spec:
+        serviceAccountName: default
+        hostNetwork: true
+        dnsPolicy: ClusterFirstWithHostNet
+        nodeSelector:
+          cloud.google.com/gke-nodepool: YOUR_TPU_V5P_16_NODEPOOL
+          cloud.google.com/gke-tpu-accelerator: tpu-v5p-slice
+          cloud.google.com/gke-tpu-topology: 2x2x4
+        tolerations:
+          - key: "google.com/tpu"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-spot"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-queued"
+            operator: "Exists"
+            effect: "NoSchedule"
+        containers:
+          - name: bench
+            image: docker.io/vllm/vllm-tpu@sha256:f9565be370a7af2b631198aa95f891221a974b2b1727d22db9b275923d3261c6
+            imagePullPolicy: IfNotPresent
+            securityContext:
+              privileged: true
+            command: ["bash", "-lc"]
+            args:
+              - |
+                set -euo pipefail
+                python3 -u /models/dsv41-v5p/scripts/in_pod_setup_v5p.py \
+                  --scripts-dir /models/dsv41-v5p/scripts \
+                  --summary-out /tmp/setup_done.json
+                echo "[WARM-HOLD] Setup complete on $(hostname); holding /dev/shm warm..."
+                sleep infinity
+            resources:
+              requests:
+                google.com/tpu: "4"
+              limits:
+                google.com/tpu: "4"
+            volumeMounts:
+              - name: dshm
+                mountPath: /dev/shm
+              - name: tpu-plugin
+                mountPath: /var/run/tpu-plugin
+              - name: models-gcs
+                mountPath: /models
+        volumes:
+          - name: dshm
+            emptyDir:
+              medium: Memory
+              sizeLimit: 240Gi
+          - name: tpu-plugin
+            hostPath:
+              path: /var/run/tpu-plugin
+              type: DirectoryOrCreate
+          - name: models-gcs
+            persistentVolumeClaim:
+              claimName: YOUR_MODELS_PVC

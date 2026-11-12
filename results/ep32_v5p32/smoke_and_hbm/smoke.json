@@ -1,0 +1,114 @@
+{
+  "timestamp_utc": "2026-11-11T02:40:20Z",
+  "base_url": "http://<private-ip>:8000",
+  "num_requests": 10,
+  "all_200_and_coherent": true,
+  "total_elapsed_s": 145.979,
+  "spec_drafts_delta": 595.0,
+  "spec_accepted_delta": 1015.0,
+  "gen_tokens_delta": 1600.0,
+  "dspark_tau": 2.7059,
+  "tau_gate_gt_2_pass": true,
+  "requests": [
+    {
+      "idx": 0,
+      "temperature": 0.0,
+      "status": 200,
+      "latency_s": 24.251,
+      "prompt_tokens": 32,
+      "completion_tokens": 160,
+      "tok_per_s": 6.6,
+      "output_preview": " Also, provide a test case. | Level | Code | Explain | Time Complexity | Space Complexity | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "
+    },
+    {
+      "idx": 1,
+      "temperature": 0.0,
+      "status": 200,
+      "latency_s": 18.47,
+      "prompt_tokens": 35,
+      "completion_tokens": 160,
+      "tok_per_s": 8.66,
+      "output_preview": " The sum is S_n = a(1 - r^n)/(1 - r). If |r| < 1, the infinite series sum is S = a/(1 - r). Use these formulas to answer the following: (a) Find the sum of the geometric series 2 + 6 + 18 + ... (the first term is 2 and the common ratio is 3). (b) Find the sum of the infinite geom"
+    },
+    {
+      "idx": 2,
+      "temperature": 0.0,
+      "status": 200,
+      "latency_s": 8.551,
+      "prompt_tokens": 32,
+      "completion_tokens": 160,
+      "tok_per_s": 18.71,
+      "output_preview": " Provide a detailed derivation of the roofline capacity and the roofline bandwidth. Also, derive the formula for the number of parameters and FLOPs. Explain the roofline capacity and the roofline bandwidth. Also, derive the formula for the number of parameters and FLOPs. Explain "
+    },
+    {
+      "idx": 3,
+      "temperature": 0.0,
+      "status": 200,
+      "latency_s": 8.373,
+      "prompt_tokens": 22,
+      "completion_tokens": 160,
+      "tok_per_s": 19.11,
+      "output_preview": " Use ROW_NUMBER() and PARTITION BY(). Return department, employee name, salary, and the rank. Use the window function ROW_NUMBER() and PARTITION BY() to find the top 3 highest-paid employees per department without ties. Use ROW_NUMBER() and PARTITION BY() to find the top 3 highes"
+    },
+    {
+      "idx": 4,
+      "temperature": 0.0,
+      "status": 200,
+      "latency_s": 19.489,
+      "prompt_tokens": 19,
+      "completion_tokens": 160,
+      "tok_per_s": 8.21,
+      "output_preview": "UnixNano() for the current time.  (Note: The current time is the Unix epoch, the number of seconds since 1970-01-01 00:00:00 UTC (the Unix epoch) WHEN 01:01:01 UTC 1970-01-01 00:00:00 UTC (the Unix epoch) is the number of seconds since 1970-01-01 00:00:00 UTC (the Unix epoch) is "
+    },
+    {
+      "idx": 5,
+      "temperature": 0.6,
+      "status": 200,
+      "latency_s": 12.716,
+      "prompt_tokens": 29,
+      "completion_tokens": 160,
+      "tok_per_s": 12.58,
+      "output_preview": " The computational educational, real time, and the educational computer lab. The use of the internet and world wide web that method is the same way that will be used in this network. In this network, the use of the internet and world wide web that method is the same way that will"
+    },
+    {
+      "idx": 6,
+      "temperature": 0.6,
+      "status": 200,
+      "latency_s": 19.988,
+      "prompt_tokens": 33,
+      "completion_tokens": 160,
+      "tok_per_s": 8.0,
+      "output_preview": "II. Solve for x over the real numbers: 2^(2x) - 5 * 2^x + 4 = 0. Show each step clearly. (4 points)\nAdded by\nChristopher D.\nClose\nStep 1\nHello! I'm ready to help you with your math problem.\nLet's solve the equation \\(2^{2x} - 5 \\cdot 2^x + 4 = 0\\).\n**\nNotice that \\(2^{2x} = (2^x)"
+    },
+    {
+      "idx": 7,
+      "temperature": 0.6,
+      "status": 200,
+      "latency_s": 13.372,
+      "prompt_tokens": 32,
+      "completion_tokens": 160,
+      "tok_per_s": 11.97,
+      "output_preview": " The mergesort function. mergesort(&self::N;::{1,2})); // {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}  If the two sorted lists have length 2,000,000 and the total length of the two lists is 4,000,000, then the algorithm takes 2,000,000 + 2,000,000 = 4,000,"
+    },
+    {
+      "idx": 8,
+      "temperature": 0.6,
+      "status": 200,
+      "latency_s": 10.426,
+      "prompt_tokens": 22,
+      "completion_tokens": 160,
+      "tok_per_s": 15.35,
+      "output_preview": " Then, provide an example of applying this method with a temperature scaling factor \\(\\tau\\).Next, we will discuss the implementation of speculative decoding with Multi-Token Prediction (MTP) in more detail. Speculative decoding with a Multi-Token Prediction (MTP) is a method to "
+    },
+    {
+      "idx": 9,
+      "temperature": 0.6,
+      "status": 200,
+      "latency_s": 10.34,
+      "prompt_tokens": 15,
+      "completion_tokens": 160,
+      "tok_per_s": 15.47,
+      "output_preview": " In this article, we will learn how to traverse a tree using the iterative postorder traversal algorithm. So let's get started with the iterative postorder traversal algorithm (we can also call it iterative postorder traversal, PREORDER). // 1) We can also call it iterative posto"
+    }
+  ]
+}

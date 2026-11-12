@@ -1,0 +1,186 @@
+{
+  "timestamp_utc": "2026-11-07T02:02:52Z",
+  "hosts": [
+    {
+      "worker_id": 0,
+      "lws_worker_index": 3,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "0",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '0'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       219Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 404.07,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 184.2,
+          "model-00048-of-00048.safetensors": 166.38,
+          "total_hybrid_stage_s": 350.87
+        }
+      }
+    },
+    {
+      "worker_id": 1,
+      "lws_worker_index": 4,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "1",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '1'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       219Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 425.1,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 184.24,
+          "model-00048-of-00048.safetensors": 175.91,
+          "total_hybrid_stage_s": 360.5
+        }
+      }
+    },
+    {
+      "worker_id": 2,
+      "lws_worker_index": 0,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "2",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '2'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       218Gi       189Gi       212Gi       238Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 414.85,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 188.51,
+          "model-00048-of-00048.safetensors": 174.76,
+          "total_hybrid_stage_s": 363.91
+        }
+      }
+    },
+    {
+      "worker_id": 3,
+      "lws_worker_index": 7,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "3",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '3'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       202Gi       218Gi       189Gi       212Gi       238Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 409.56,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 183.76,
+          "model-00048-of-00048.safetensors": 171.48,
+          "total_hybrid_stage_s": 355.65
+        }
+      }
+    },
+    {
+      "worker_id": 4,
+      "lws_worker_index": 5,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "4",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '4'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       219Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 407.25,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 184.1,
+          "model-00048-of-00048.safetensors": 172.33,
+          "total_hybrid_stage_s": 356.79
+        }
+      }
+    },
+    {
+      "worker_id": 5,
+      "lws_worker_index": 1,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "5",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '5'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       219Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 408.55,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 182.29,
+          "model-00048-of-00048.safetensors": 174.88,
+          "total_hybrid_stage_s": 357.54
+        }
+      }
+    },
+    {
+      "worker_id": 6,
+      "lws_worker_index": 2,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "6",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '6'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       218Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 405.52,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 182.18,
+          "model-00048-of-00048.safetensors": 171.53,
+          "total_hybrid_stage_s": 353.98
+        }
+      }
+    },
+    {
+      "worker_id": 7,
+      "lws_worker_index": 6,
+      "k8s_hostname": "<gke-node>",
+      "short_hostname": "<gke-node>",
+      "ip": "<private-ip>",
+      "agent_worker_number": "7",
+      "worker_network_endpoints": "<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>,<gke-node>",
+      "tpu_env": "TPU_WORKER_ID: '7'\nALT: 'false'\nCHIPS_PER_HOST_BOUNDS: '2,2,1'\nCONSUMER_PROJECT_ID: 'YOUR_GCP_PROJECT_ID'\nENABLE_ICI_RESILIENCY: 'true'\nENABLE_IMPROVED_REROUTE_ALLREDUCE_STRATEGY: 'false'\nHOST_BOUNDS: '1,2,4'\nINJECT_SLICE_BUILDER_FAULT: ''\nNODE_ID: '0'\nTOPOLOGY: '2x4x4'\nTPU_ACCELERATOR_TYPE: 'v5p-64'\nTPU_RUNTIME_METRICS_PORTS: '8431,8432,8433,8434,8435,8436,8437,8438'\nWRAP: 'false,false,false'\nZONE: 'us-central1-a'",
+      "vbar_sock_exists": true,
+      "free_h": "total        used        free      shared  buff/cache   available\nMem:           440Gi       201Gi       219Gi       189Gi       212Gi       239Gi\nSwap:             0B          0B          0B",
+      "df_shm": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           240G  190G   51G  79% /dev/shm",
+      "setup": {
+        "hostname": "<gke-node>",
+        "total_setup_s": 415.58,
+        "stage_stats": {
+          "model-00047-of-00048.safetensors": 182.6,
+          "model-00048-of-00048.safetensors": 172.78,
+          "total_hybrid_stage_s": 355.68
+        }
+      }
+    }
+  ],
+  "full_32_2x4x4_ok": false,
+  "subslice_16_16_2x2x4_ok": false,
+  "subslice_8_24_2x4x1_2x4x3_ok": false,
+  "subslice_16_8_2x2x4_2x2x2_ok": false,
+  "note_ep24_model_constraint": "DeepSeek-V4.1-Flash-1017 MTP/DSpark has dspark_n_routed_experts=128 (128 % 24 != 0), so EP=24 is unsupported by model expert count regardless of topology; valid EP degrees are 8, 16, 32."
+}

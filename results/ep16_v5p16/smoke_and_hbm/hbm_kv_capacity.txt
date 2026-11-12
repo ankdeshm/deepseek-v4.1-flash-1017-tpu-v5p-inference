@@ -1,0 +1,167 @@
+===== v5p16-warm-bench-0 =====
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:27:58 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:36:17 [default_loader.py:430] Loading weights took 484.27 seconds
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:36:19 [fp8.py:1392] FP8 linear weights requantized for runtime: shape=[15360, 5120], weight_dtype=float8_e4m3fn, scale=[5120], requant_block_size=per-channel
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) (Worker_DP0_EP0 pid=1743) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:37:33 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP3_EP3 pid=1739) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP2_EP2 pid=1740) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP1_EP1 pid=1741) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP0_EP0 pid=1743) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(EngineCore_DP3 pid=715) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP2 pid=714) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP1 pid=713) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP0 pid=712) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(ApiServer_1 pid=717) INFO 11-07 07:01:31 [launcher.py:69] Route: /update_weights, Methods: POST
+(ApiServer_1 pid=717) INFO 11-07 07:01:31 [launcher.py:69] Route: /release_kv_cache_memory, Methods: POST
+(ApiServer_0 pid=716) (ApiServer_2 pid=718) INFO 11-07 07:01:31 [launcher.py:69] Route: /update_weights, Methods: POST
+(ApiServer_0 pid=716) INFO 11-07 07:01:31 [launcher.py:69] Route: /update_weights, Methods: POST
+(ApiServer_2 pid=718) INFO 11-07 07:01:31 [launcher.py:69] Route: /release_kv_cache_memory, Methods: POST
+(ApiServer_0 pid=716) INFO 11-07 07:01:31 [launcher.py:69] Route: /release_kv_cache_memory, Methods: POST
+
+===== v5p16-warm-bench-0-1 =====
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:27:58 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:36:20 [default_loader.py:430] Loading weights took 488.45 seconds
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:36:23 [fp8.py:1392] FP8 linear weights requantized for runtime: shape=[15360, 5120], weight_dtype=float8_e4m3fn, scale=[5120], requant_block_size=per-channel
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:37:33 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:37:33 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP9_EP9 pid=717) INFO 11-07 05:45:40 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP11_EP11 pid=715) INFO 11-07 05:45:40 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP8_EP8 pid=714) INFO 11-07 05:45:40 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP10_EP10 pid=716) INFO 11-07 05:45:40 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(EngineCore_DP9 pid=610) INFO 11-07 05:45:40 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP11 pid=612) INFO 11-07 05:45:40 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP8 pid=609) INFO 11-07 05:45:40 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP10 pid=611) INFO 11-07 05:45:40 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+
+===== v5p16-warm-bench-0-2 =====
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:37:22 [default_loader.py:430] Loading weights took 550.79 seconds
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:37:24 [fp8.py:1392] FP8 linear weights requantized for runtime: shape=[15360, 5120], weight_dtype=float8_e4m3fn, scale=[5120], requant_block_size=per-channel
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:37:33 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:37:33 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP7_EP7 pid=715) INFO 11-07 05:45:39 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP4_EP4 pid=716) INFO 11-07 05:45:39 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP6_EP6 pid=717) INFO 11-07 05:45:39 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP5_EP5 pid=718) INFO 11-07 05:45:39 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(EngineCore_DP7 pid=614) INFO 11-07 05:45:39 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP4 pid=611) INFO 11-07 05:45:39 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP6 pid=613) INFO 11-07 05:45:39 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP5 pid=612) INFO 11-07 05:45:39 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+
+===== v5p16-warm-bench-0-3 =====
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:27:47 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:27:52 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:27:57 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:28:03 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:28:08 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:36:00 [default_loader.py:430] Loading weights took 467.39 seconds
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:36:02 [fp8.py:1392] FP8 linear weights requantized for runtime: shape=[15360, 5120], weight_dtype=float8_e4m3fn, scale=[5120], requant_block_size=per-channel
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:37:27 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:37:28 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:37:30 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:37:32 [mxfp4.py:1186] DeepSeek-V4 MXFP4 weights processed and stored as native FP4 for GMM kernel.
+(Worker_DP12_EP12 pid=719) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP14_EP14 pid=717) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP15_EP15 pid=718) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(Worker_DP13_EP13 pid=716) INFO 11-07 05:45:41 [tpu_worker.py:540] Memory statistics | total_hbm_limit_gb=95.73GiB | total_hbm_limit_cap_gb=81.37GiB | total_hbm_used_gb=31.84GiB | kv_connector_hbm_reserve_gb=0.0GiB | total_hbm_avail_gb=49.53GiB
+(EngineCore_DP12 pid=610) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP14 pid=612) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP15 pid=613) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x
+(EngineCore_DP13 pid=611) INFO 11-07 05:45:41 [kv_cache_utils.py:2454] TPU KV cache size: 6,034,227 tokens, Maximum concurrency for 131,072 tokens per request: 46.04x

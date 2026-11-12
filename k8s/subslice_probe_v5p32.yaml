@@ -1,0 +1,75 @@
+apiVersion: leaderworkerset.x-k8s.io/v1
+kind: LeaderWorkerSet
+metadata:
+  name: step0-v5p32-probe
+  namespace: default
+  annotations:
+    leaderworkerset.sigs.k8s.io/exclusive-topology: "cloud.google.com/gke-nodepool"
+spec:
+  replicas: 1
+  leaderWorkerTemplate:
+    size: 8
+    restartPolicy: RecreateGroupOnPodRestart
+    workerTemplate:
+      metadata:
+        labels:
+          app: step0-v5p32-probe
+        annotations:
+          gke-gcsfuse/volumes: "true"
+          cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      spec:
+        serviceAccountName: default
+        hostNetwork: true
+        dnsPolicy: ClusterFirstWithHostNet
+        nodeSelector:
+          cloud.google.com/gke-nodepool: YOUR_TPU_V5P_32_NODEPOOL
+          cloud.google.com/gke-tpu-accelerator: tpu-v5p-slice
+          cloud.google.com/gke-tpu-topology: 2x4x4
+        tolerations:
+          - key: "google.com/tpu"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-spot"
+            operator: "Exists"
+            effect: "NoSchedule"
+          - key: "cloud.google.com/gke-queued"
+            operator: "Exists"
+            effect: "NoSchedule"
+        containers:
+          - name: probe
+            image: docker.io/vllm/vllm-tpu@sha256:f9565be370a7af2b631198aa95f891221a974b2b1727d22db9b275923d3261c6
+            imagePullPolicy: IfNotPresent
+            securityContext:
+              privileged: true
+            command: ["bash", "-lc"]
+            args:
+              - |
+                for i in $(seq 1 60); do
+                  [ -f /models/dsv41-v5p/scripts/subslice_probe.py ] && break
+                  sleep 1
+                done
+                exec python3 -u /models/dsv41-v5p/scripts/subslice_probe.py --hold-after
+            resources:
+              requests:
+                google.com/tpu: "4"
+              limits:
+                google.com/tpu: "4"
+            volumeMounts:
+              - name: dshm
+                mountPath: /dev/shm
+              - name: tpu-plugin
+                mountPath: /var/run/tpu-plugin
+              - name: models-gcs
+                mountPath: /models
+        volumes:
+          - name: dshm
+            emptyDir:
+              medium: Memory
+              sizeLimit: 240Gi
+          - name: tpu-plugin
+            hostPath:
+              path: /var/run/tpu-plugin
+              type: DirectoryOrCreate
+          - name: models-gcs
+            persistentVolumeClaim:
+              claimName: YOUR_MODELS_PVC
